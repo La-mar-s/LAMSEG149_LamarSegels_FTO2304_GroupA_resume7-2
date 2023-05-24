@@ -138,7 +138,27 @@ footer {
 
 .dark {
     background: #0f0f10;
+    background-image: url(/images/wp6705749-moutains-ultra-hd-wallpapers.jpg);
+    background-size: cover;
 }
+
+@media (max-width: 768px) {
+    .dark {
+      background-size: 20%; /* Adjust as needed for mobile devices */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .dark {
+      background-size: 75%; /* Adjust as needed for tablets */
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .dark {
+      background-size: 100%; /* Adjust as needed for laptops */
+    }
+  }
 
 .grey {
     background: #3e3d3d;
@@ -156,6 +176,7 @@ footer {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+
 }
 
 .wave svg {
